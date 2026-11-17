@@ -1,0 +1,128 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/life-insurance",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/annuities",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/built-to-last-choosing-permanent-life-insurance-in-broward-county",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/life-insurance-in-fort-lauderdale-a-decision-framework-not-a-sales-pitch",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/ten-years-one-policy-how-to-pick-the-carrier-behind-it",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/home",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/blog",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/health-insurance",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/aca-insurance-plans-florida",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/medicare-advantage",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/supplemental-insurance",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/aca-insurance-plans-in-fort-lauderdale-what-individuals-need-to-know-for-2026-and-2027",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-qualify-for-an-aca-subsidy-in-florida-in-2026",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/medicare-supplement-insurance-in-fort-lauderdale-choosing-the-right-coverage-plan",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/plugging-the-gaps-a-2027-guide-to-supplemental-coverage-and-the-agent-behind-it",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/premiums-are-rising-again-a-practical-2027-guide-for-floridas-aca-shoppers",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/index",
+      "destination": "/",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=31536000; includeSubDomains"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=()"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)\\.(webp|png|jpg|svg)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ]
+}
