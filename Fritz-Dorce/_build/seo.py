@@ -48,7 +48,7 @@ def sub(s, pat, rep, count=1, flags=re.S):
 # ------------------------------------------------------------------ shared nodes
 address = {"@type": "PostalAddress", "addressLocality": "Cooper City", "addressRegion": "FL",
            "postalCode": "33330", "addressCountry": "US"}
-logo = {"@type": "ImageObject", "@id": f"{SITE}/#logo", "url": f"{SITE}/itw-logo.png", "width": 470, "height": 96,
+logo = {"@type": "ImageObject", "@id": f"{SITE}/#logo", "url": f"{SITE}/itd-insurance-delivers-logo.png", "width": 456, "height": 96,
         "caption": BRAND}
 photo = {"@type": "ImageObject", "@id": f"{SITE}/#fritz-photo", "url": f"{SITE}/{A['photo']}", "width": 820,
          "height": 1092, "caption": f"{NAME}, {A['title']}"}
@@ -233,7 +233,7 @@ nf = f'''<!DOCTYPE html>
   <body>
     <nav class="nav" id="nav">
       <div class="nav__inner wrap">
-        <a href="/" class="nav__brand"><img src="itw-logo.png" width="470" height="96" alt="{BRAND}" class="brand-logo"></a>
+        <a href="/" class="nav__brand"><img src="itd-insurance-delivers-logo.png" width="456" height="96" alt="{BRAND}" class="brand-logo"></a>
         <div class="nav__links" id="nav-links">
           <a href="/" class="nav__link">Home</a>
           <a href="/about" class="nav__link">About</a>
@@ -326,7 +326,7 @@ ph = Image.open(A["photo"]).convert("RGB")
 ph = ph.resize((round(ph.width * 630 / ph.height), 630), Image.LANCZOS)
 og.paste(ph, (1200 - ph.width, 0))
 d = ImageDraw.Draw(og)
-lg = Image.open("itw-logo.png").convert("RGBA")
+lg = Image.open("itd-insurance-delivers-logo.png").convert("RGBA")
 lg = lg.resize((380, round(lg.height * 380 / lg.width)), Image.LANCZOS)
 card = Image.new("RGBA", (lg.width + 48, lg.height + 36), (255, 255, 255, 255))
 og.paste(card, (64, 70), card)

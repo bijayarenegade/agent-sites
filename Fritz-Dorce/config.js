@@ -27,7 +27,7 @@ const AGENT = {
     linkedin: null,
     twitter: null,
   },
-  logo: "itw-logo.png",
+  logo: "itd-insurance-delivers-logo.png",
 
   hours: [
     { days: "Monday – Friday", time: "9:00 AM – 6:00 PM" },
