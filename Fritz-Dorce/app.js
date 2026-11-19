@@ -126,8 +126,8 @@ function brandMarkup() {
   if (AGENT.logo) {
     return `<img src="${AGENT.logo}" alt="${AGENT.name}" class="brand-logo">`;
   }
-  // "ITW" bold + "Insurance" light  (Policygenius-style)
-  return `<span class="brand-bold">ITW</span><span class="brand-light">Insurance</span>`;
+  // "ITD" bold + "Insurance" light  (Policygenius-style)
+  return `<span class="brand-bold">ITD</span><span class="brand-light">Insurance</span>`;
 }
 
 /* ---------- Service helpers ---------- */
