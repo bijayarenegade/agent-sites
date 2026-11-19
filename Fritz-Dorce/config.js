@@ -6,13 +6,13 @@
 const AGENT = {
   name: "Fritz Dorce",
   firstName: "Fritz",
-  brand: "ITW Insurance That Works",
+  brand: "ITD Insurance That Delivers",
   title: "Licensed Independent Insurance Agent",
-  heroTitle: "Insurance that works for South Florida.",
+  heroTitle: "Insurance that delivers for South Florida.",
   tagline:
     "Life, home, auto and business insurance from a licensed independent agent who compares Florida's A-rated carriers for you — free, with no pressure.",
   bio:
-    "ITW Insurance That Works is an independent insurance practice founded in South Florida by Fritz Dorce, a licensed agent devoted to protecting what matters most to local families and businesses. Fritz built ITW on a simple principle: insurance shouldn't feel like a maze. Every quote, every policy and every claim is handled personally — the same licensed agent, the same phone number, year after year.\n\nAs an independent agent, Fritz is appointed with carriers including Aflac, Americo, ManhattanLife and United of Omaha. Licensed in Florida, Georgia and Texas across life, personal and commercial lines, he evaluates each client's needs and compares real options — so you get a real recommendation instead of one company's playbook.",
+    "ITD Insurance That Delivers is an independent insurance practice founded in South Florida by Fritz Dorce, a licensed agent devoted to protecting what matters most to local families and businesses. Fritz built ITD on a simple principle: insurance shouldn't feel like a maze. Every quote, every policy and every claim is handled personally — the same licensed agent, the same phone number, year after year.\n\nAs an independent agent, Fritz is appointed with carriers including Aflac, Americo, ManhattanLife and United of Omaha. Licensed in Florida, Georgia and Texas across life, personal and commercial lines, he evaluates each client's needs and compares real options — so you get a real recommendation instead of one company's playbook.",
   experience: "0", // newly licensed per profile → experience stat/FAQ hidden
   photo: "fritz-dorce.webp",
   heroImage: "her-image.webp", // full-width hero background
@@ -81,12 +81,12 @@ const AGENT = {
     },
     // From insurancethatworksflorida.com
     {
-      q: "Do you charge a fee to work with ITW Insurance That Works?",
+      q: "Do you charge a fee to work with ITD Insurance That Delivers?",
       a: "Never. Fritz gets paid by the insurance carrier once you enroll, not by you. Every quote, every comparison, every bit of ongoing service stays free, always.",
     },
     {
       q: "Which carriers do you actually work with?",
-      a: "ITW works independently, appointed with A-rated carriers across life, annuity, home, auto and business products. That independence means the plan gets matched to you, not to a commission.",
+      a: "ITD works independently, appointed with A-rated carriers across life, annuity, home, auto and business products. That independence means the plan gets matched to you, not to a commission.",
     },
     {
       q: "Can I meet with someone in person in South Florida?",

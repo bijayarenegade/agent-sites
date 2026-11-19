@@ -57,7 +57,7 @@ catalog = {"@type": "OfferCatalog", "name": "Insurance coverage", "itemListEleme
         {"@type": "Offer", "itemOffered": {"@type": "Service", "name": it}} for it in s["items"]]}
     for s in A["services"].values()]}
 agency = {
-    "@type": "InsuranceAgency", "@id": AG, "name": BRAND, "alternateName": f"ITW Insurance — {NAME}",
+    "@type": "InsuranceAgency", "@id": AG, "name": BRAND, "alternateName": f"ITD Insurance — {NAME}",
     "description": "Independent insurance agency in South Florida offering life, personal (home, auto, flood) and commercial insurance across Florida, Georgia and Texas.",
     "url": f"{SITE}/", "telephone": TEL, "email": A["email"], "logo": {"@id": logo["@id"]},
     "image": [OG_IMG, photo["url"]], "address": address, "areaServed": STATES,
@@ -71,7 +71,7 @@ agency = {
 }
 person = {
     "@type": "Person", "@id": PERSON, "name": NAME, "givenName": "Fritz", "familyName": "Dorce",
-    "jobTitle": A["title"], "description": "Licensed independent insurance agent and founder of ITW Insurance That Works, helping South Florida families and businesses compare life, home, auto and business coverage.",
+    "jobTitle": A["title"], "description": "Licensed independent insurance agent and founder of ITD Insurance That Delivers, helping South Florida families and businesses compare life, home, auto and business coverage.",
     "image": {"@id": photo["@id"]}, "telephone": TEL, "email": A["email"], "address": address,
     "worksFor": {"@id": AG}, "knowsAbout": KNOWS, "knowsLanguage": "English",
     "url": f"{SITE}/about", "sameAs": SAME_AS,
@@ -331,7 +331,7 @@ lg = lg.resize((380, round(lg.height * 380 / lg.width)), Image.LANCZOS)
 card = Image.new("RGBA", (lg.width + 48, lg.height + 36), (255, 255, 255, 255))
 og.paste(card, (64, 70), card)
 og.paste(lg, (88, 88), lg)
-d.text((64, 230), "Insurance that works", font=ImageFont.truetype(font_b, 56), fill="white")
+d.text((64, 230), "Insurance that delivers", font=ImageFont.truetype(font_b, 56), fill="white")
 d.text((64, 298), "for South Florida.", font=ImageFont.truetype(font_b, 56), fill="white")
 d.rectangle((64, 388, 160, 392), fill=GOLD)
 d.text((64, 418), "Life · Home · Auto · Business", font=ImageFont.truetype(font_r, 30), fill=GOLD)

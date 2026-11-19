@@ -89,7 +89,7 @@ s = head(s, f"{NAME} | {TITLE_SPEC} in {LOC}",
 s = sub(s, r'<a href="index.html" class="nav__brand">.*?</a>',
         f'<a href="index.html" class="nav__brand"><img src="itd-insurance-delivers-logo.png" alt="{BRAND}" class="brand-logo"></a>')
 s = sub(s, r'<span class="hero__badge">.*?</span>', f'<span class="hero__badge">{BRAND} · Licensed in FL, GA &amp; TX</span>')
-s = sub(s, r'<h1 class="hero__title" id="hero-title">.*?</h1>', '<h1 class="hero__title" id="hero-title">Insurance that works for South Florida.</h1>')
+s = sub(s, r'<h1 class="hero__title" id="hero-title">.*?</h1>', '<h1 class="hero__title" id="hero-title">Insurance that delivers for South Florida.</h1>')
 s = sub(s, r'<p class="hero__subtitle" id="hero-subtitle">.*?</p>',
         f'<p class="hero__subtitle" id="hero-subtitle">\n            {A["tagline"]}\n          </p>')
 pills = "\n".join(f'          <a class="hero__quote-btn" href="{A["quoteLinks"][k]}" target="_blank" rel="noopener">{short(k)}</a>' for k in keys)
@@ -110,7 +110,7 @@ s = sub(s, r'<span class="stats-band__label">.*?</span>', '<span class="stats-ba
 s = sub(s, r'<h2 class="stats-band__title">.*?</h2>',
         '<h2 class="stats-band__title">A <em>local</em> agent, a <span class="stats-band__hl">personal promise</span>.</h2>')
 s = sub(s, r'<p class="stats-band__subtitle">.*?</p>',
-        "<p class=\"stats-band__subtitle\">\n              Fritz built ITW Insurance That Works on a simple principle: insurance shouldn't feel like a maze. "
+        "<p class=\"stats-band__subtitle\">\n              Fritz built ITD Insurance That Delivers on a simple principle: insurance shouldn't feel like a maze. "
         "Every quote, every enrollment, every claim is handled personally — by the same licensed agent, year after year.\n            </p>")
 stats = "\n".join(f'              <div class="stats-band__stat"><span class="stats-band__stat-value">{x["value"]}</span><span class="stats-band__stat-label">{x["label"]}</span></div>' for x in A["stats"])
 s = sub(s, r'<div class="stats-band__stats" id="stats-row">.*?</div>\n          </div>',
@@ -146,7 +146,7 @@ open("index.html", "w", encoding="utf-8").write(s)
 # ---------------- about ----------------
 s = open("about.html", encoding="utf-8").read()
 person = {"@context": "https://schema.org", "@type": "Person", "name": NAME, "jobTitle": A["title"],
-          "description": "Licensed independent insurance agent and founder of ITW Insurance That Works, offering life, personal and commercial insurance across Florida, Georgia and Texas.",
+          "description": "Licensed independent insurance agent and founder of ITD Insurance That Delivers, offering life, personal and commercial insurance across Florida, Georgia and Texas.",
           "telephone": TEL, "email": A["email"], "image": A["photo"], "address": addr(), "knowsAbout": KNOWS,
           "knowsLanguage": ["English"], "worksFor": {"@type": "InsuranceAgency", "name": BRAND},
           "sameAs": ["https://agents.agencyheight.com/insurance/fritz-dorce", "https://www.facebook.com/share/18YEEStvtj/", "https://www.instagram.com/fritzdorce"]}
