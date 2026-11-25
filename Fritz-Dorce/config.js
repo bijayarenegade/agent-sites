@@ -27,7 +27,7 @@ const AGENT = {
     linkedin: null,
     twitter: null,
   },
-  logo: "itd-insurance-delivers-logo.png",
+  logo: "itd-insurance-delivers-logo.png?v=2",
 
   hours: [
     { days: "Monday – Friday", time: "9:00 AM – 6:00 PM" },
@@ -47,19 +47,19 @@ const AGENT = {
   reviews: [
     {
       name: "Jamal & Keisha T.",
-      role: "Flagler Village, Fort Lauderdale",
+      role: "Flagler Village",
       quote:
         "We wanted term life to cover the mortgage. He compared four carriers, got us approved fast, and didn't sell us a thing we didn't need.",
     },
     {
       name: "David P.",
-      role: "Coral Ridge, Fort Lauderdale",
+      role: "Coral Ridge",
       quote:
         "Our ACA plan left us exposed on dental and hospital costs. Fritz layered on dental and hospital indemnity for less than we expected, no upsell, just math.",
     },
     {
       name: "Marisol R.",
-      role: "Victoria Park, Fort Lauderdale",
+      role: "Victoria Park",
       quote:
         "Fritz walked us through three ACA options in one call and enrolled us the same day. First time insurance actually made sense.",
     },
